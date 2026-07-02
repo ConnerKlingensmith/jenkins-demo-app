@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script {
                     // Use Docker Pipeline plugin to build image
-                    dockerImage = docker.build("${IMIAGE_NAME}:${BUILD_NUMBER}")
+                    dockerImage = docker.build("${IMAGE_NAME}:${BUILD_NUMBER}")
                 }
             }
         }
